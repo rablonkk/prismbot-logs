@@ -11,12 +11,13 @@ devido a quantidade de commits realizados no repositório oficial do prismbot, a
 * o termo de serviço e de privacidade foi refeito.
 * foi adicionado um comando, o commando `/help`.
 * foram corrigidos erros ao reproduzir músicas do YouTube (principalmente playlists).
-* foram feitos melhorias visuais no código.
+* foram feitas melhorias visuais no código.
 * foram feitas melhorias no sistema de conexão do bot.
 * ouve algumas alterações no código fonte, para obter uma máxima performance.
 * o suporte ao soundcloud foi oficialmente adicionado.
 * o código responsável pelo processamento da stream foi refeito, para que o mesmo pudesse suportar música vindas da plataforma do soundcloud.
 * o design do comando player e now playing foram redefinidos.
+* foram corrigidos erros de cálculo no comando `/queue`.
 
 alterações feitas no código fonte:
 ```js
