@@ -163,7 +163,7 @@ como eu havia dito, foi realizado vários commits no repositório oficial do pri
 #### changelogs (Quarta-Feira - 01/03/2023)
 * foi iniciado o processo de reconstrução do site (obrigado `sushi#0326` por ajudar! 😊).
 
-#### metas do desenvolvimento do site:
+#### metas de desenvolvimento do site:
 * adicionar um sistema de músicas mais tocadas (ficará um card presente na home do site, mostrando as músicas mais tocadas do prism, e elas serão atualizadas em tempo real).
 * fazer a integração do site ao banco de dados do prism.
 * mostrar informações em tempo real na home do site.
