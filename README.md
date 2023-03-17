@@ -20,7 +20,7 @@ devido a quantidade de commits realizados no repositório oficial do prismbot, a
 
 alterações feitas no código fonte:
 ```js
-    // alteração feita na embed do player.
+    // nova embed do player.
     let nowPlayingEmbed = new EmbedBuilder()
         .setAuthor({ name: `${npMetadata.artist}`, iconURL: npMetadata.artistIcon })
         .setThumbnail(npMetadata.thumbnail)
@@ -43,7 +43,7 @@ alterações feitas no código fonte:
             }
         )
 
-    // alteração feita na embed do nowplaying;
+    // nova embed do nowplaying;
     const nowPlaying = existingConnection.state.subscription.player.state.resource.metadata;
     const timeBar = await this.getTimeBar(existingConnection.state.subscription.player.state.resource.playbackDuration / 1000, nowPlaying.duration);
 
@@ -71,7 +71,7 @@ alterações feitas no código fonte:
             )
         .setFooter({ text: `${timeBar}` })
 
-    // alterações feitas na área responsável pelo processamento da stream.
+    // novo código de processamento da stream.
     let playQueueID = playerData.queueID;
     let playQueue = queueData[playQueueID];
 
@@ -135,7 +135,7 @@ alterações feitas no código fonte:
 * foi adicionado o sistema de tipagem (obrigado `</Nexus_Prime>#7739` por ajudar! 😊).
 
 ```ts
-//sistema de tipagem;
+// sistema de tipagem;
 import { Client } from "discord.js";
 import { MongoClient } from "mongodb";
 
@@ -153,6 +153,9 @@ export {}
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086126710128398447/helpplay.png)
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086126710354886686/help.png)
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086127215227453501/anticrashsystem.png)
+
+#### commits
+como eu havia dito, foi realizado vários commits no repositório oficial do prismbot, por este motivo eu tive que resumir a lista de alterações, caso contrário, este README ficaria absurdo de grande.
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086131497125302313/commits2.png?width=1262&height=683)
 ![Screenshot](https://cdn.discordapp.com/attachments/1011286935924396152/1086131497330810931/commits.png)
 
