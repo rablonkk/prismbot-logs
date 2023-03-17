@@ -17,10 +17,34 @@ devido a quantidade de commits realizados no repositório oficial do prismbot, a
 * o suporte ao soundcloud foi oficialmente adicionado.
 * o código responsável pelo processamento da stream foi refeito, para que o mesmo pudesse suportar música vindas da plataforma do soundcloud.
 * o design do comando player e now playing foram redefinidos.
-* foram corrigidos erros de cálculo no comando `/queue`.
+* foram feitas correções de cálculo no comando `/queue`.
 
 alterações feitas no código fonte:
 ```js
+    // correção feita no comando queue;
+    let queueMax = Math.ceil(queueData.length / 10);
+
+    const page = await this.getPage(button, queueMax);
+
+    class Pages {
+        static #data = function() {
+            const listSize = 10;
+            const res = [];
+
+            for (let i - 0; i < queueData.length; i += listSize) {
+                const chunk = queueData.slice(i, i + listSize)
+            };
+
+            return res;
+        }();
+
+        static get(integer) {
+            return this.#data[integer - 1]
+        };
+    };
+
+    const selectedPages = Pages.get(page.updated);
+
     // nova embed do player.
     let nowPlayingEmbed = new EmbedBuilder()
         .setAuthor({ name: `${npMetadata.artist}`, iconURL: npMetadata.artistIcon })
