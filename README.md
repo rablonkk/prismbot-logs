@@ -144,6 +144,7 @@ alterações feitas no código fonte:
 ```
 
 #### Screenshots de erros e afins:
+
 ![Screenshot](https://cdn.discordapp.com/attachments/1011286935924396152/1082803265797881967/prismbot-image-1.png)
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086121748497449042/nowplaying.png)
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086121748266750023/streamerror.png?width=492&height=683)
@@ -173,16 +174,23 @@ declare global {
 export {}
 ```
 
+## Changelogs da atualização 9.0.0 até 15.2.0 (Bot)
+* Foi adicionado um sistema de detecção automática de canais inativos. Isto fará com que o Prism saía de forma automática de canais inativos (sem nenhuma músicas em reprodução), economizando assim recursos da aplicação, como memória ram, processamento, network e etc.
+* Foram feitas melhorias e otimizações no código fonte, utilizando o eslint e outros tipos de correções disponíveis. As alterações foram feitas tanto no código fonte da aplicação quanto no diretório de pastas e arquivos.
+* Foi criada e implementada uma nova API ao Prism, fornecendo assim informações para o site, como o nome dos artistas, capas, álbuns e o tempo de duração de suas músicas. Além disso, a API também informa o uptime do bot e a quantidade de canais no qual o bot está conectado.
+* Foram feitas correções no processamento de streaming das músicas vindas da plataforma do YouTube e SoundCloud. Agora o processamento está mais rápido e otimizado (principalmente para playlist e álbuns).
+* Foi criado uma página de status, para que assim os nossos clientes possam ver o uptime da nossa API e do bot como o todo, além de outras informações como o uptime do nosso website e de outros sites relecionados ao Prism.
+
+[Página de status](https://prismstatus.site)
+
 #### Screenshots e afins:
+
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1082803725858508810/prismbot-image-3.png?width=526&height=683)
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086126710128398447/helpplay.png)
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086126710354886686/help.png)
-![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086127215227453501/anticrashsystem.png)
 
 #### Commits
-Como eu havia dito, foi realizado vários commits no repositório oficial do prismbot, por este motivo eu tive que resumir a lista de alterações, caso contrário, este README ficaria absurdo de grande.
-![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086131497125302313/commits2.png?width=1262&height=683)
-![Screenshot](https://cdn.discordapp.com/attachments/1011286935924396152/1086131497330810931/commits.png)
+Como eu havia dito, foi realizado vários commits no repositório oficial do prismbot, por este motivo eu tive que resumir a lista de alterações, caso contrário, este README ficaria absurdamente grande. São 5 á 6 commits por semana.
 
 ## Lista de alterações/correções (website):
 #### Changelogs (Quarta-Feira - 01/03/2023)
@@ -193,16 +201,13 @@ Como eu havia dito, foi realizado vários commits no repositório oficial do pri
 * Fazer a integração do site ao banco de dados da aplicação.
 * Mostrar informações da aplicação em tempo real na home do site.
 
-#### Screenshots e afins:
-![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086128641576009728/website1.png?width=1366&height=683)
-![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1086128641299193917/website2.png?width=1440&height=589)
-
 #### Changelogs (Segunda-Feira - 20/03/2023)
 * O site concluído com sucesso!
 * Foi criada uma API para que os dados pudesse ser atualizados em tempo real. E novamente, muito obrigado `sushi#0326`, por ajudar e colaborar com o projeto!
 * A API foi implementada ao bot, e está 100% operacional. Agora todos os dados são atualizados em tempo real.
 
 #### Screenshots e afins:
+
 ![Screenshot](https://media.discordapp.net/attachments/1011286935924396152/1087544111243989063/image.png)
 
 https://prismsite.discloud.app/api/top-tracks
